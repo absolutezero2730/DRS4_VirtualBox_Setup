@@ -60,8 +60,10 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
    ```
 10. After the compilation has finished, you can now connect the DRS4 evaluation board to your PC. When connecting the device, you might notice that Windows loads Winusb.sys automatically. This may take a few minutes. Please be patient. 
 11. On the top of the list, Click <b>Device</b> again and select "USB." A new device named "DRS4 Evaluation Board" should have existed on the sub list. Click it. 
-   + Run drscl and drsosc
-   ```
-   ./drscl
-   ./drsosc
-   ```
+    + Run drscl and drsosc.
+    ```
+    ./drscl
+    ./drsosc
+    ```
+## Windows 7/8.X/10
++
