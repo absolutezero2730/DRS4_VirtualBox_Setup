@@ -46,7 +46,7 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
    mkdir DRS4
    cd DRS4
    ```
-   + Download the source code tar ball from the [Dropbox](https://www.dropbox.com/sh/clqo7ekr0ysbrip/AACoWJzrQAbf3WiBJHG89bGGa?dl=0).
+   + Download the source code tar ball from their [Dropbox](https://www.dropbox.com/sh/clqo7ekr0ysbrip/AACoWJzrQAbf3WiBJHG89bGGa?dl=0).
    ```
    wget -c https://www.dropbox.com/sh/clqo7ekr0ysbrip/AAAJ3eaYX7SmgKybswyaRZ6aa/drs-5.0.5.tar.gz
    ls
@@ -58,4 +58,10 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
    cd drs-5.0.5
    make
    ```
-10. After the compilation has finished, you can now connect the DRS4 evaluation board to your PC. 
+10. After the compilation has finished, you can now connect the DRS4 evaluation board to your PC. When connecting the device, you might notice that Windows loads Winusb.sys automatically. This may take a few minutes. Please be patient. 
+11. On the top of the list, Click <b>Device</b> again and select "USB." A new device named "DRS4 Evaluation Board" should have existed on the sub list. Click it. 
+   + Run drscl and drsosc
+   ```
+   ./drscl
+   ./drsosc
+   ```
