@@ -22,3 +22,40 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
    + Retype new UNIX password: [Retype the root password you chosen before]. Now you can use the command: su
 7. On the top of the list, Click <b>Device</b> and select "Insert Guest Additions CD Images..." Click <b>Run</b>. Then, you may need to enter the super user password. After things are done, press enter to close the window. 
 8. Restart the VM. The screen resolution should be the same as your PC now.
+9. Software Download for the DRS4 Evaluation Board requires the [wxWidgets package](http://www.wxwidgets.org/downloads/) and the [libusb-1.0 package](https://libusb.info/). Open a terminal, step-by-step: 
+   + First activate the super user to change the working directory.
+   ```
+   su
+   cd
+   sudo apt search wxWidgets
+   sudo apt search libwxgtk
+   ```
+   + From the searching list, find <b>libwxgtkX.X-XvX</b>, <b>libwxgtkX.X-XvX-dbg</b>, and <b>libwxgtkX.X-XvX-dev</b>. You will need to install these three packages. 
+   ```
+   sudo apt-get install libwxgtkX.X-XvX libwxgtkX.X-XvX-dbg libwxgtkX.X-XvX-dev
+   ```
+   + Search and install the libusb package. 
+   ```
+   sudo apt search libusb
+   sudo apt-get install libusb-1.0-0
+   sudo apt-get install libusb-1.0-0-dev
+   ```
+   + Now create a new folder for the [DRS4 software](https://www.psi.ch/drs/software-download). 
+   ```
+   cd /home/username/Documents
+   mkdir DRS4
+   cd DRS4
+   ```
+   + Download the source code tar ball from [Dropbox](https://www.dropbox.com/sh/clqo7ekr0ysbrip/AACoWJzrQAbf3WiBJHG89bGGa?dl=0).
+   ```
+   wget -c https://www.dropbox.com/sh/clqo7ekr0ysbrip/AAAJ3eaYX7SmgKybswyaRZ6aa/drs-5.0.5.tar.gz
+   ls
+   tar -xzvf drs-5.0.5.tar.gz
+   ls
+   ```
+   + Now change to the drs directory.
+   ```
+   cd drs-5.0.5
+   make
+   ```
+10. After the compilation has finished, you can now connect the DRS4 evaluation board to your PC. 
