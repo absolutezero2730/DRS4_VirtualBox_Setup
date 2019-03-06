@@ -46,7 +46,7 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
    mkdir DRS4
    cd DRS4
    ```
-   + Download the source code tar ball from [Dropbox](https://www.dropbox.com/sh/clqo7ekr0ysbrip/AACoWJzrQAbf3WiBJHG89bGGa?dl=0).
+   + Download the source code tar ball from the [Dropbox](https://www.dropbox.com/sh/clqo7ekr0ysbrip/AACoWJzrQAbf3WiBJHG89bGGa?dl=0).
    ```
    wget -c https://www.dropbox.com/sh/clqo7ekr0ysbrip/AAAJ3eaYX7SmgKybswyaRZ6aa/drs-5.0.5.tar.gz
    ls
