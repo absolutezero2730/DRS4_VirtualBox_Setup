@@ -66,4 +66,14 @@ Running DRS4 Evaluation Board on Virtualbox (Linux) in Win7/8.X/10 (for beginner
     ./drsosc
     ```
 ## Windows 7/8.X/10
-+
++ Follow the instruction from the [DRS4 software download page](https://www.psi.ch/drs/software-download)
+## Windows 7/8.X trouble shooting
++ When connecting the board and running the [Zadig program](https://zadig.akeo.ie/), some Windows PCs may return "driver installation failed." Then the drscl shows: <b>Successfully scanned, but no boards found</b>. Infact, the WinUsb driver has been in existence in your PC. One can just follow the instructions [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/winusb-installation). 
+1. Plug in your device to the host system.
+2. Open Device Manager and locate the device.
+3. Right-click the device and select Update driver software... from the context menu.
+4. In the wizard, select Browse my computer for driver software.
+5. Select Let me pick from a list of device drivers on my computer.
+6. From the list of device classes, select Universal Serial Bus devices.
+7. The wizard displays WinUsb Device. Select it to load the driver.
++ In the wizard, somehow the default setting displays <b>Microsoft Device</b> on the Top of the list and replaced the <b>WinUsb Device</b>. You can easily re-load the WinUsb Device. Just ignore the WARNING from the device manager. The board should work fine. 
